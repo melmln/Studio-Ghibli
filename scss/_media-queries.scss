@@ -1,0 +1,167 @@
+ /* MEDIA QUERIES  */
+
+/********* MOBILE 480 **********/
+
+@media screen and (max-width: 480px) {
+
+    .index__body {
+        background-image: url("../stylesheet/img/22.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* HEADER */
+
+    .menu__container {
+        display: flex;
+
+        img {
+            width: 120px;
+            height: 100px;
+        }
+
+        .menu__inicio {
+            display: none;
+        }
+    }
+
+    /* FIN HEADER */
+
+    /* INDEX */
+
+    .principal__container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 0.5fr);
+        place-items: center;
+        margin-bottom: 100px;
+
+        h1 {
+            font-size: 90px;
+        }
+
+        .button__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+
+            .button__icon {
+                width: 90px;
+                height: 90px;
+            }
+        }
+
+        .welcome__message{
+            padding: 40px;
+            font-size: 25px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    /* FIN INDEX */
+
+    /* MEDIA */
+
+    .card__media {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        width: 93%;
+
+        .img__media {
+            padding: 13px;
+        }
+    }
+
+    /* FIN MEDIA */
+
+    /* CONTACT US */
+
+    .card__contact {
+        margin: 20px;
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+
+    /* FIN CONTACT US */
+
+    /* FOUNDERS */
+
+    .ghibli__info {
+        margin: 10px;
+        border-radius: 5px;
+        font-size: 22px;
+    }
+
+    .founders__container {
+        .card {
+            margin: 10px;
+            margin: 10px;
+            text-align: center;
+
+            .card-text {
+            font-size: 22px;
+            text-align: justify;
+            }
+        }
+    }
+    
+    /* FIN FOUNDERS */
+
+    /* SOUNDTRACKS */
+    .card {
+        border-radius: 5px;
+        margin: 20px;
+        margin-right: 30px;
+        padding: 20px;
+    }
+
+    /* FIN SOUNDTRACKS */
+
+    /* FILMS */ 
+
+    .films__ul {
+        margin: 0;
+        padding: 0;
+
+        .card__films {
+            padding: 20px;
+
+            .título__films {
+                font-size: 25px;
+            }
+        }
+    }
+
+    /* FIN FILMS */ 
+
+    /* FOOTER */
+
+    footer {
+        position: none;
+        padding: 30px;
+
+        span {
+            font-size: 15px ;
+        }
+
+        .redes {
+            font-size: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+    }
+
+    /* FIN FOOTER */
+
+}
+
+/********* FIN MOBILE 480 **********/
+ /* FIN MEDIA QUERIES */

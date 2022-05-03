@@ -1,0 +1,41 @@
+/* HEADER */
+
+header {
+    #nav__color {
+        background-color: $principal__color;
+
+        .menu__inicio {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 30px;
+
+            .aumentar {
+                transition: transform 0.3s ease-in;
+
+                &:hover {
+                    transform: scale(1.1);
+                    border-radius: 10px;
+                    text-shadow: 0.2px 0.2px 0.2x grey;
+                }
+
+                a {
+
+                    text-decoration: none;
+                    color: white;
+                    font-size: larger;
+                    font-family: 'Cormorant', serif;
+
+                    &:hover {
+                        color: white;
+                    }
+
+                }
+            }
+        }
+    
+    }
+}
+   
+
+/* FIN HEADER */
+

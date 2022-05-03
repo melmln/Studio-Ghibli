@@ -1,0 +1,38 @@
+/* FOUNDERS */
+
+.ghibli__info {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-right: 100px;
+    color: gray;
+    font-weight: lighter;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.664);
+    padding: 30px;
+}
+
+.founders__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .card {
+        margin: 3rem;
+        font-family: 'Cormorant', serif;
+
+        .card-title {
+            font-size: 1.8rem;
+        }
+
+        .card-text {
+            font-size: 20px;
+        }
+    }
+
+}
+
+/* FIN FOUNDERS */

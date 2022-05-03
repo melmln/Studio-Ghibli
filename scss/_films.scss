@@ -1,0 +1,35 @@
+/* FILMS */
+.films__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .card__films {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: white;
+        padding: 20px;
+        margin: 15px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+        border-radius: 5px;
+
+    }
+
+    .trailers {
+        transition: transform 0.2s ease-in;
+
+        &:hover {
+            transform: scale(1.01);
+        }
+
+        .título__films {
+            text-align: center;
+            color: rgba(128, 128, 128, 0.774);
+        }
+    }
+}
+
+/* FIN FILMS */

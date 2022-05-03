@@ -1,0 +1,328 @@
+@charset "UTF-8";
+/* RESET CSS*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+* {
+  text-decoration: none;
+  list-style-type: none; }
+
+/* FIN RESET CSS */
+/* VAR */
+/* FIN VAR */
+/* IMPORT */
+/* HEADER */
+header #nav__color {
+  background-color: #4c6fb4; }
+  header #nav__color .menu__inicio {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px; }
+    header #nav__color .menu__inicio .aumentar {
+      transition: transform 0.3s ease-in; }
+      header #nav__color .menu__inicio .aumentar:hover {
+        transform: scale(1.1);
+        border-radius: 10px;
+        text-shadow: 0.2px 0.2px 0.2x grey; }
+      header #nav__color .menu__inicio .aumentar a {
+        text-decoration: none;
+        color: white;
+        font-size: larger;
+        font-family: 'Cormorant', serif; }
+        header #nav__color .menu__inicio .aumentar a:hover {
+          color: white; }
+
+/* FIN HEADER */
+/* INDEX */
+.principal__container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+  color: white;
+  width: 100%; }
+  .principal__container h1 {
+    margin-top: 150px;
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Amatic SC';
+    text-transform: uppercase; }
+  .principal__container .button__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center; }
+    .principal__container .button__container ul {
+      display: flex;
+      gap: 20px; }
+      .principal__container .button__container ul .button__icon {
+        width: 100px;
+        height: 100px; }
+      .principal__container .button__container ul .shadow {
+        border-radius: 50px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 1px;
+        transition: transform 0.1s ease-in; }
+        .principal__container .button__container ul .shadow:hover {
+          transform: scale(0.98); }
+  .principal__container .welcome__message {
+    background-color: white;
+    opacity: 0.5;
+    padding: 40px;
+    font-size: 23px;
+    text-align: center;
+    color: black;
+    font-family: 'Cormorant', serif;
+    margin-bottom: 100px; }
+
+/* FIN INDEX */
+/* SOUNDTRACKS */
+.soundtracks__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 15px; }
+  .soundtracks__container .card {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 50px; }
+
+/* FIN SOUNDTRACKS */
+/* FILMS */
+.films__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .films__container .card__films {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px; }
+  .films__container .trailers {
+    transition: transform 0.2s ease-in; }
+    .films__container .trailers:hover {
+      transform: scale(1.01); }
+    .films__container .trailers .título__films {
+      text-align: center;
+      color: rgba(128, 128, 128, 0.774); }
+
+/* FIN FILMS */
+/* FOOTER */
+footer {
+  position: static;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  font-family: 'Cormorant', serif;
+  background-color: #4C6FB4;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px; }
+  footer .footer__style {
+    display: flex;
+    justify-content: space-between; }
+    footer .footer__style span {
+      color: white; }
+    footer .footer__style a {
+      text-decoration: none;
+      color: white;
+      padding-left: 20px; }
+      footer .footer__style a:hover {
+        color: white; }
+    footer .footer__style .redes {
+      font-size: 35px;
+      color: white;
+      padding-left: 5px;
+      padding-right: 5px; }
+    footer .footer__style .redes__scale {
+      transition: transform 0.1s ease-in; }
+      footer .footer__style .redes__scale:hover {
+        transform: scale(1.01);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 50px; }
+
+/* FIN FOOTER */
+/* MEDIA */
+.card__media {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  margin: 20px; }
+  .card__media .img__media {
+    padding: 20px;
+    display: flex;
+    justify-content: center; }
+
+/* FIN MEDIA */
+/* CONTACT US */
+.card__contact {
+  background-color: white;
+  margin: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: gray;
+  font-family: 'Cormorant', serif;
+  border-radius: 5px;
+  padding: 50px;
+  margin-top: 80px;
+  margin-bottom: 200px; }
+  .card__contact .form-floating {
+    margin: 10px;
+    color: gray; }
+    .card__contact .form-floating .btn {
+      margin: 20px; }
+  .card__contact .contact__message {
+    background-color: rgba(255, 255, 255, 0.733);
+    color: grey;
+    font-weight: lighter;
+    margin: 10px;
+    font-size: x-large;
+    padding: 0px; }
+
+/* FIN CONTACT US */
+/* FOUNDERS */
+.ghibli__info {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-right: 100px;
+  color: gray;
+  font-weight: lighter;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.664);
+  padding: 30px; }
+
+.founders__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .founders__container .card {
+    margin: 3rem;
+    font-family: 'Cormorant', serif; }
+    .founders__container .card .card-title {
+      font-size: 1.8rem; }
+    .founders__container .card .card-text {
+      font-size: 20px; }
+
+/* FIN FOUNDERS */
+/* MEDIA QUERIES  */
+/********* MOBILE 480 **********/
+@media screen and (max-width: 480px) {
+  .index__body {
+    background-image: url("../stylesheet/img/22.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  /* HEADER */
+  .menu__container {
+    display: flex; }
+    .menu__container img {
+      width: 120px;
+      height: 100px; }
+    .menu__container .menu__inicio {
+      display: none; }
+  /* FIN HEADER */
+  /* INDEX */
+  .principal__container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 0.5fr);
+    place-items: center;
+    margin-bottom: 100px; }
+    .principal__container h1 {
+      font-size: 90px; }
+    .principal__container .button__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center; }
+      .principal__container .button__container .button__icon {
+        width: 90px;
+        height: 90px; }
+    .principal__container .welcome__message {
+      padding: 40px;
+      font-size: 25px;
+      margin-left: 20px;
+      margin-right: 20px; }
+  /* FIN INDEX */
+  /* MEDIA */
+  .card__media {
+    margin: 20px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    width: 93%; }
+    .card__media .img__media {
+      padding: 13px; }
+  /* FIN MEDIA */
+  /* CONTACT US */
+  .card__contact {
+    margin: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  /* FIN CONTACT US */
+  /* FOUNDERS */
+  .ghibli__info {
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 22px; }
+  .founders__container .card {
+    margin: 10px;
+    margin: 10px;
+    text-align: center; }
+    .founders__container .card .card-text {
+      font-size: 22px;
+      text-align: justify; }
+  /* FIN FOUNDERS */
+  /* SOUNDTRACKS */
+  .card {
+    border-radius: 5px;
+    margin: 20px;
+    margin-right: 30px;
+    padding: 20px; }
+  /* FIN SOUNDTRACKS */
+  /* FILMS */
+  .films__ul {
+    margin: 0;
+    padding: 0; }
+    .films__ul .card__films {
+      padding: 20px; }
+      .films__ul .card__films .título__films {
+        font-size: 25px; }
+  /* FIN FILMS */
+  /* FOOTER */
+  footer {
+    position: none;
+    padding: 30px; }
+    footer span {
+      font-size: 15px; }
+    footer .redes {
+      font-size: 30px;
+      padding-left: 10px;
+      padding-right: 10px; }
+  /* FIN FOOTER */ }
+
+/********* FIN MOBILE 480 **********/
+/* FIN MEDIA QUERIES */
+/* FIN IMPORT */
+.index__body {
+  background-image: url("../css/img/22.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.pages__body {
+  background-image: url("../css/img/howls.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }

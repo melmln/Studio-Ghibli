@@ -1,0 +1,48 @@
+/* RESET CSS*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+/* FIN RESET CSS */
+
+/* VAR */
+
+$principal__color: #4C6FB4;
+
+/* FIN VAR */
+
+/* IMPORT */
+
+@import "header.scss";
+@import "index.scss";
+@import "soundtracks.scss";
+@import "films.scss";
+@import "footer.scss";
+@import "media.scss";
+@import "contact-us.scss";
+@import "founders.scss";
+@import "media-queries.scss";
+
+
+/* FIN IMPORT */
+
+    .index__body {
+        background-image: url("../css/img/22.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .pages__body {
+            background-image: url("../css/img/howls.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;  
+    }

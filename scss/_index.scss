@@ -1,0 +1,64 @@
+/* INDEX */
+
+.principal__container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+
+    color: white;
+    width: 100%;
+
+    h1 {
+        margin-top: 150px;
+        font-size: 100px;
+        text-align: center;
+        font-family: 'Amatic SC';
+        text-transform: uppercase;
+    }
+
+    .button__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+
+        ul {
+            display: flex;
+            gap: 20px;
+
+            .button__icon {
+                width: 100px;
+                height: 100px;   
+            }
+
+            .shadow {
+                border-radius: 50px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 1px;
+                transition: transform 0.1s ease-in;
+
+                &:hover {
+                    transform: scale(0.98);
+                }
+
+                    
+            }
+
+        }
+    }
+
+    .welcome__message{
+        background-color: white;
+        opacity: 0.5;
+        padding: 40px;
+        font-size: 23px;
+        text-align: center;
+        color: black;
+        font-family: 'Cormorant', serif;
+        margin-bottom: 100px;
+    
+    }
+
+}
+
+/* FIN INDEX */

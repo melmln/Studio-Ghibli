@@ -1,0 +1,33 @@
+/* CONTACT US */
+
+.card__contact {
+    background-color: white;
+    margin: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+    color: gray;
+    font-family: 'Cormorant', serif;
+    border-radius: 5px;
+    padding: 50px;
+    margin-top: 80px;
+    margin-bottom: 200px;
+
+    .form-floating  {
+        margin: 10px;
+        color: gray;
+
+        .btn {
+            margin: 20px;
+        }
+        
+    }
+    .contact__message {
+        background-color: rgba(255, 255, 255, 0.733);
+        color: grey;
+        font-weight: lighter;
+        margin: 10px;
+        font-size: x-large;
+        padding: 0px;
+    }
+}
+
+/* FIN CONTACT US */

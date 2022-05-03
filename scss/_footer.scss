@@ -1,0 +1,53 @@
+/* FOOTER */
+
+footer {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    font-family: 'Cormorant', serif;
+    background-color: $principal__color;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px ;
+
+    .footer__style {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding-left: 20px;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        .redes {
+            font-size: 35px;
+            color: white;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .redes__scale {
+            transition: transform 0.1s ease-in;
+
+            &:hover {
+                transform: scale(1.01);
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                border-radius: 50px;
+            }
+        }
+
+
+    }
+}
+
+
+/* FIN FOOTER */
