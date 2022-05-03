@@ -31,7 +31,15 @@ $principal__color: #4C6FB4;
 @import "contact-us.scss";
 @import "founders.scss";
 @import "media-queries.scss";
+@import "extend.scss";
 
+
+
+/* MIXIN */
+
+@import "mixins";
+
+/* MIXIN */
 
 /* FIN IMPORT */
 

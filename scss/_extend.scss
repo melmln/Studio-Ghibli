@@ -1,0 +1,32 @@
+.card {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card__media {
+   @extend .card;
+    .img__media {
+        padding: 30px;
+        display:flex;
+        justify-content: center;
+    } 
+}
+
+.soundtracks__container {
+    @include center ();
+     flex-wrap: wrap;
+     margin: 15px;
+ 
+     .card {
+         @extend .card;
+     }
+ }
+
+ .films__container {
+    @include center ();
+    flex-wrap: wrap;
+
+    .card__films {
+        @extend .card;
+    }
+}

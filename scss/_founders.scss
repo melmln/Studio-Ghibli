@@ -1,3 +1,9 @@
+/* IMPORT */
+
+@import "mixins";
+
+/* FIN IMPORT */
+
 /* FOUNDERS */
 
 .ghibli__info {
@@ -15,9 +21,7 @@
 }
 
 .founders__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center ();
     flex-wrap: wrap;
 
     .card {

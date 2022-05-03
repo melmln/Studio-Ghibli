@@ -1,22 +1,19 @@
+/* IMPORT */
+
+@import "extend.scss";
+
+/* FIN IMPORT */
+
 /* MEDIA */
 
 .card__media {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 95%;
-    grid-template-rows: 100%;
-    place-items: center;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: 50px;
 
     .img__media {
         padding: 30px;
         display:flex;
         justify-content: center;
-    
     }
-    
 }
 
 /* FIN MEDIA */
