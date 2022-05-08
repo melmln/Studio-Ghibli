@@ -1,7 +1,7 @@
 {
-  "name": "desafio-sass",
+  "name": "Studio Ghibli",
   "version": "1.0.0",
-  "description": "Proyecto con npm",
+  "description": "Página no oficial de Studio Ghibli",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
