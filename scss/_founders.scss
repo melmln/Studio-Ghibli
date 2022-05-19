@@ -9,15 +9,14 @@
 .ghibli__info {
     display: flex;
     justify-content: center;
-    margin-left: 100px;
-    margin-top: 50px;
+    margin: 50px;
     margin-bottom: 0px;
-    margin-right: 100px;
     color: gray;
     font-weight: lighter;
     font-size: 20px;
     background-color: rgba(255, 255, 255, 0.664);
     padding: 30px;
+    border-radius: 5px;
 }
 
 .founders__container {
@@ -27,13 +26,14 @@
     .card {
         margin: 3rem;
         font-family: 'Cormorant', serif;
+        background-color: white;
 
         .card-title {
-            font-size: 1.8rem;
+            font-size: 35px;
         }
 
         .card-text {
-            font-size: 20px;
+            font-size: 25px;
         }
     }
 

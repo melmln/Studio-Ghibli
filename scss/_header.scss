@@ -1,13 +1,18 @@
 /* HEADER */
 
 header {
+    position: relative;
+    z-index: 2;
     h1 {
         font-size: 20px;
         margin: 0;
     }
-    #nav__color {
-        background-color: $principal__color;
 
+    .nav__color {
+            background-color: rgba(255, 255, 255, 0);
+        
+/*         background-color: $principal__color;
+ */
         .menu__inicio {
             display: flex;
             justify-content: space-evenly;
@@ -39,7 +44,7 @@ header {
     
     }
 }
-   
+
 
 /* FIN HEADER */
 

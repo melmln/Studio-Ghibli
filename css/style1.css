@@ -14,33 +14,61 @@
 /* FIN VAR */
 /* IMPORT */
 /* HEADER */
-header h1 {
-  font-size: 20px;
-  margin: 0; }
-
-header #nav__color {
-  background-color: #4C6FB4; }
-  header #nav__color .menu__inicio {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 30px; }
-    header #nav__color .menu__inicio .aumentar {
-      transition: transform 0.3s ease-in; }
-      header #nav__color .menu__inicio .aumentar:hover {
-        transform: scale(1.1);
-        border-radius: 10px;
-        text-shadow: 0.2px 0.2px 0.2x grey; }
-      header #nav__color .menu__inicio .aumentar a {
-        text-decoration: none;
-        color: white;
-        font-size: larger;
-        font-family: 'Cormorant', serif; }
-        header #nav__color .menu__inicio .aumentar a:hover {
-          color: white; }
+header {
+  position: relative;
+  z-index: 2; }
+  header h1 {
+    font-size: 20px;
+    margin: 0; }
+  header .nav__color {
+    background-color: rgba(255, 255, 255, 0);
+    /*         background-color: $principal__color;
+ */ }
+    header .nav__color .menu__inicio {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 30px; }
+      header .nav__color .menu__inicio .aumentar {
+        transition: transform 0.3s ease-in; }
+        header .nav__color .menu__inicio .aumentar:hover {
+          transform: scale(1.1);
+          border-radius: 10px;
+          text-shadow: 0.2px 0.2px 0.2x grey; }
+        header .nav__color .menu__inicio .aumentar a {
+          text-decoration: none;
+          color: white;
+          font-size: larger;
+          font-family: 'Cormorant', serif; }
+          header .nav__color .menu__inicio .aumentar a:hover {
+            color: white; }
 
 /* FIN HEADER */
 /* INDEX */
+#video-background {
+  width: 100vh;
+  position: relative; }
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180vh;
+  object-fit: cover; }
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180vh;
+  background-color: black;
+  opacity: 0.3;
+  mix-blend-mode: overlay; }
+
 .principal__container {
+  position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(3, 1fr);
@@ -71,6 +99,8 @@ header #nav__color {
         .principal__container .button__container ul .shadow:hover {
           transform: scale(0.98); }
   .principal__container .welcome__message {
+    position: relative;
+    z-index: 2;
     background-color: white;
     opacity: 0.5;
     padding: 40px;
@@ -78,7 +108,8 @@ header #nav__color {
     text-align: center;
     color: black;
     font-family: 'Cormorant', serif;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    border-radius: 5px; }
 
 /* FIN INDEX */
 /* IMPORT */
@@ -119,6 +150,9 @@ header #nav__color {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: 50px; }
+  .soundtracks__container .btn {
+    position: relative;
+    bottom: 50px; }
 
 /* FIN SOUNDTRACKS */
 /* IMPORT */
@@ -160,27 +194,40 @@ header #nav__color {
     padding: 20px;
     margin: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    padding-bottom: 0px; }
   .films__container .trailers {
     transition: transform 0.2s ease-in; }
     .films__container .trailers:hover {
-      transform: scale(1.01); }
-    .films__container .trailers .título__films {
-      text-align: center;
-      color: rgba(128, 128, 128, 0.774); }
+      transform: scale(1.005); }
+    .films__container .trailers .btn {
+      background-color: rgba(255, 255, 255, 0.603);
+      border: 0;
+      position: relative;
+      bottom: 50px;
+      color: #504c4c;
+      transition: transform 0.2s ease-in; }
+      .films__container .trailers .btn:hover {
+        transform: scale(1.05); }
 
 /* FIN FILMS */
 /* FOOTER */
 footer {
-  position: static;
+  /*     position: static;
+ */
+  position: relative;
+  z-index: 2;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 30px;
+  margin-top: 150px;
   font-family: 'Cormorant', serif;
-  background-color: #4C6FB4;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px; }
+  /* background-color: $principal__color; */
+  background-color: #1F5A35; }
   footer .footer__style {
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-content: space-between; }
     footer .footer__style span {
@@ -230,11 +277,12 @@ footer {
 /* FIN IMPORT */
 /* MEDIA */
 .card__media {
-  margin: 50px; }
+  margin: 50px;
+  border-radius: 5px; }
   .card__media .img__media {
-    padding: 30px;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    width: 100%; }
 
 /* FIN MEDIA */
 /* CONTACT US */
@@ -268,15 +316,14 @@ footer {
 .ghibli__info {
   display: flex;
   justify-content: center;
-  margin-left: 100px;
-  margin-top: 50px;
+  margin: 50px;
   margin-bottom: 0px;
-  margin-right: 100px;
   color: gray;
   font-weight: lighter;
   font-size: 20px;
   background-color: rgba(255, 255, 255, 0.664);
-  padding: 30px; }
+  padding: 30px;
+  border-radius: 5px; }
 
 .founders__container {
   display: flex;
@@ -285,11 +332,12 @@ footer {
   flex-wrap: wrap; }
   .founders__container .card, .founders__container .card__media, .founders__container .films__container .card__films, .films__container .founders__container .card__films {
     margin: 3rem;
-    font-family: 'Cormorant', serif; }
+    font-family: 'Cormorant', serif;
+    background-color: white; }
     .founders__container .card .card-title, .founders__container .card__media .card-title, .founders__container .films__container .card__films .card-title, .films__container .founders__container .card__films .card-title {
-      font-size: 1.8rem; }
+      font-size: 35px; }
     .founders__container .card .card-text, .founders__container .card__media .card-text, .founders__container .films__container .card__films .card-text, .films__container .founders__container .card__films .card-text {
-      font-size: 20px; }
+      font-size: 25px; }
 
 /* FIN FOUNDERS */
 /* MEDIA QUERIES  */
@@ -418,11 +466,16 @@ footer {
 /* MIXIN */
 /* FIN IMPORT */
 .index__body {
-  background-image: url("../css/img/22.jpg");
-  background-repeat: no-repeat;
+  /* background-image: url("../css/img/22.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; */ }
+
+.contact__body {
+  background-image: url("../css/img/background2.jpg");
+  background-repeat: repeat;
   background-size: cover; }
 
 .pages__body {
-  background-image: url("../css/img/howls.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-image: url("../css/img/bacground1.jpg");
+  background-repeat: repeat;
+  background-size: contain; }

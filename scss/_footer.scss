@@ -1,16 +1,23 @@
 /* FOOTER */
 
 footer {
-    position: static;
+/*     position: static;
+ */ 
+    position: relative;
+    z-index: 2;
     bottom: 0;
     left: 0;
     width: 100%;
     padding: 30px;
+    margin-top: 150px;
     font-family: 'Cormorant', serif;
+    /* background-color: $principal__color; */
     background-color: $principal__color;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px ;
+
 
     .footer__style {
+        position: relative;
+        z-index: 2;
         display: flex;
         justify-content: space-between;
 
