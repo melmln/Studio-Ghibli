@@ -21,9 +21,7 @@ header {
     font-size: 20px;
     margin: 0; }
   header .nav__color {
-    background-color: rgba(255, 255, 255, 0);
-    /*         background-color: $principal__color;
- */ }
+    background-color: rgba(255, 255, 255, 0); }
     header .nav__color .menu__inicio {
       display: flex;
       justify-content: space-evenly;
@@ -118,7 +116,7 @@ video {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
 
 .card__media .img__media {
-  padding: 30px;
+  padding: 10px;
   display: flex;
   justify-content: center; }
 
@@ -137,6 +135,11 @@ video {
 
 /* FIN IMPORT */
 /* SOUNDTRACKS */
+.pages__body {
+  background-image: url("../css/img/bacground3.jpg");
+  background-repeat: repeat;
+  background-size: contain; }
+
 .soundtracks__container {
   display: flex;
   align-items: center;
@@ -161,7 +164,7 @@ video {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
 
 .card__media .img__media {
-  padding: 30px;
+  padding: 10px;
   display: flex;
   justify-content: center; }
 
@@ -180,6 +183,11 @@ video {
 
 /* FIN IMPORT */
 /* FILMS */
+.pages__body {
+  background-image: url("../css/img/bacground3.jpg");
+  background-repeat: repeat;
+  background-size: contain; }
+
 .aumentar a h1 {
   background-color: rgba(255, 255, 255, 0.466);
   border-radius: 8px;
@@ -217,18 +225,17 @@ video {
 
 /* FIN FILMS */
 /* FOOTER */
+.footer__fixed {
+  margin-top: 150px; }
+
 footer {
-  /*     position: static;
- */
   position: relative;
   z-index: 2;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 30px;
-  margin-top: 150px;
   font-family: 'Cormorant', serif;
-  /* background-color: $principal__color; */
   background-color: #1F5A35; }
   footer .footer__style {
     position: relative;
@@ -262,7 +269,7 @@ footer {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
 
 .card__media .img__media {
-  padding: 30px;
+  padding: 10px;
   display: flex;
   justify-content: center; }
 
@@ -281,13 +288,23 @@ footer {
 
 /* FIN IMPORT */
 /* MEDIA */
+.pages__body {
+  background-image: url("../css/img/bacground3.jpg");
+  background-repeat: repeat;
+  background-size: contain; }
+
 .card__media {
-  margin: 50px;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-bottom: 50px;
+  margin-top: 30px;
   border-radius: 5px; }
-  .card__media .img__media {
-    display: flex;
-    justify-content: center;
-    width: 100%; }
+  .card__media .column__media {
+    padding: 0; }
+    .card__media .column__media .img__media {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
 
 /* FIN MEDIA */
 /* CONTACT US */
@@ -298,14 +315,19 @@ footer {
   color: gray;
   font-family: 'Cormorant', serif;
   border-radius: 5px;
-  padding: 50px;
-  margin-top: 80px;
-  margin-bottom: 200px; }
+  padding: 30px;
+  margin-top: 40px;
+  margin-bottom: 100px; }
   .card__contact .form-floating {
     margin: 10px;
     color: gray; }
+    .card__contact .form-floating .textarea__size {
+      height: 270px; }
     .card__contact .form-floating .btn {
       margin: 20px; }
+    .card__contact .form-floating .btn-primary {
+      background-color: #1F5A35;
+      border-color: #1F5A35; }
   .card__contact .contact__message {
     background-color: rgba(255, 255, 255, 0.733);
     color: grey;
@@ -318,6 +340,11 @@ footer {
 /* IMPORT */
 /* FIN IMPORT */
 /* FOUNDERS */
+.pages__body {
+  background-image: url("../css/img/bacground3.jpg");
+  background-repeat: repeat;
+  background-size: contain; }
+
 .ghibli__info {
   display: flex;
   justify-content: center;
@@ -349,10 +376,15 @@ footer {
 /********* MOBILE 480 **********/
 @media screen and (max-width: 480px) {
   .pages__body {
-    background-image: url("../css/img/bacground11.jpg");
+    background-image: url("../css/img/bacground3.jpg");
     background-repeat: repeat;
     background-size: contain; }
   /* HEADER */
+  /*  .container-fluid {
+        background-image: url("../css/img/bacground1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; 
+    } */
   .menu__container {
     display: flex; }
     .menu__container img {
@@ -369,9 +401,9 @@ footer {
   /* FIN HEADER */
   /* INDEX */
   video {
-    width: 500px; }
+    width: 100%; }
   .capa {
-    width: 500px; }
+    width: 100%; }
   .principal__container {
     display: grid;
     grid-template-columns: 100%;
@@ -392,7 +424,8 @@ footer {
       padding: 40px;
       font-size: 25px;
       margin-left: 20px;
-      margin-right: 20px; }
+      margin-right: 20px;
+      margin-bottom: 0; }
   /* FIN INDEX */
   /* MEDIA */
   .card__media {
@@ -402,7 +435,8 @@ footer {
     margin-top: 30px;
     width: 93%; }
     .card__media .img__media {
-      padding: 13px; }
+      padding: 5px;
+      width: 100%; }
   /* FIN MEDIA */
   /* CONTACT US */
   .card__contact {
@@ -441,16 +475,23 @@ footer {
         font-size: 25px; }
   /* FIN FILMS */
   /* FOOTER */
+  .footer__fixed {
+    margin-top: 500px;
+    margin-bottom: 0; }
   footer {
     position: none;
     padding: 30px;
-    margin-top: 400px; }
+    margin-top: 200px;
+    padding-left: 10px;
+    padding-right: 10px; }
     footer span {
-      font-size: 15px; }
+      font-size: 13px;
+      margin: 0; }
     footer .redes {
-      font-size: 30px;
       padding-left: 10px;
       padding-right: 10px; }
+      footer .redes .fa-brands {
+        font-size: 28px; }
   /* FIN FOOTER */ }
 
 /********* FIN MOBILE 480 **********/
@@ -460,7 +501,7 @@ footer {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
 
 .card__media .img__media {
-  padding: 30px;
+  padding: 10px;
   display: flex;
   justify-content: center; }
 
@@ -485,7 +526,9 @@ footer {
   background-repeat: repeat;
   background-size: cover; }
 
-.pages__body {
-  background-image: url("../css/img/bacground3.jpg");
-  background-repeat: repeat;
-  background-size: contain; }
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 240, 240, 1.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
+.navbar-light .navbar-toggler {
+  color: rgba(255, 255, 255, 0);
+  border: none; }

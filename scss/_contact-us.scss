@@ -7,18 +7,27 @@
     color: gray;
     font-family: 'Cormorant', serif;
     border-radius: 5px;
-    padding: 50px;
-    margin-top: 80px;
-    margin-bottom: 200px;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 100px;
 
     .form-floating  {
         margin: 10px;
         color: gray;
 
+        .textarea__size {
+            height: 270px;
+        }
+
         .btn {
             margin: 20px;
+        
         }
         
+        .btn-primary {
+            background-color: $principal__color;
+            border-color: $principal__color;
+        }
     }
     .contact__message {
         background-color: rgba(255, 255, 255, 0.733);

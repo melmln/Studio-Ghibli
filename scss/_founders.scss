@@ -6,6 +6,12 @@
 
 /* FOUNDERS */
 
+.pages__body {
+    background-image: url("../css/img/bacground3.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+}
+
 .ghibli__info {
     display: flex;
     justify-content: center;

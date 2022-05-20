@@ -6,15 +6,29 @@
 
 /* MEDIA */
 
+.pages__body {
+            background-image: url("../css/img/bacground3.jpg");
+            background-repeat: repeat;
+            background-size: contain;
+    }
+
 .card__media {
-    margin: 50px;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    margin-top: 30px;
     border-radius: 5px;
+
+    .column__media {
+        padding: 0;
+    
     
         .img__media {
-            display:flex;
+            display: flex;
             justify-content: center;
             width: 100%;
         }
+    }    
 }
 
 /* FIN MEDIA */
