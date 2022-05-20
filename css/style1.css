@@ -180,6 +180,11 @@ video {
 
 /* FIN IMPORT */
 /* FILMS */
+.aumentar a h1 {
+  background-color: rgba(255, 255, 255, 0.466);
+  border-radius: 8px;
+  padding: 2px; }
+
 .films__container {
   display: flex;
   align-items: center;
@@ -343,11 +348,10 @@ footer {
 /* MEDIA QUERIES  */
 /********* MOBILE 480 **********/
 @media screen and (max-width: 480px) {
-  .index__body {
-    background-image: url("../stylesheet/img/22.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; }
+  .pages__body {
+    background-image: url("../css/img/bacground11.jpg");
+    background-repeat: repeat;
+    background-size: contain; }
   /* HEADER */
   .menu__container {
     display: flex; }
@@ -356,8 +360,18 @@ footer {
       height: 100px; }
     .menu__container .menu__inicio {
       display: none; }
+      .menu__container .menu__inicio a {
+        background-color: rgba(141, 141, 141, 0.404);
+        border-radius: 8px; }
+        .menu__container .menu__inicio a h1 {
+          background-color: rgba(141, 141, 141, 0.404);
+          border-radius: 8px; }
   /* FIN HEADER */
   /* INDEX */
+  video {
+    width: 500px; }
+  .capa {
+    width: 500px; }
   .principal__container {
     display: grid;
     grid-template-columns: 100%;
@@ -429,7 +443,8 @@ footer {
   /* FOOTER */
   footer {
     position: none;
-    padding: 30px; }
+    padding: 30px;
+    margin-top: 400px; }
     footer span {
       font-size: 15px; }
     footer .redes {
@@ -465,17 +480,12 @@ footer {
 /* MIXIN */
 /* MIXIN */
 /* FIN IMPORT */
-.index__body {
-  /* background-image: url("../css/img/22.jpg");
-        background-repeat: no-repeat;
-        background-size: cover; */ }
-
 .contact__body {
   background-image: url("../css/img/background2.jpg");
   background-repeat: repeat;
   background-size: cover; }
 
 .pages__body {
-  background-image: url("../css/img/bacground1.jpg");
+  background-image: url("../css/img/bacground3.jpg");
   background-repeat: repeat;
   background-size: contain; }

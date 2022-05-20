@@ -4,11 +4,10 @@
 
 @media screen and (max-width: 480px) {
 
-    .index__body {
-        background-image: url("../stylesheet/img/22.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+    .pages__body {
+        background-image: url("../css/img/bacground11.jpg");
+        background-repeat: repeat;
+        background-size: contain;
     }
 
     /* HEADER */
@@ -23,12 +22,30 @@
 
         .menu__inicio {
             display: none;
+
+            a {
+                background-color: rgba(141, 141, 141, 0.404);
+                border-radius: 8px;
+
+                h1 {
+                    background-color: rgba(141, 141, 141, 0.404);
+                    border-radius: 8px;
+                }
+            }
         }
     }
 
     /* FIN HEADER */
 
     /* INDEX */
+
+    video {
+        width: 500px;
+    }
+    
+    .capa {
+        width: 500px;
+    }
 
     .principal__container {
         display: grid;
@@ -146,6 +163,7 @@
     footer {
         position: none;
         padding: 30px;
+        margin-top: 400px;
 
         span {
             font-size: 15px ;
