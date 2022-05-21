@@ -43,7 +43,6 @@ header {
 /* FIN HEADER */
 /* INDEX */
 #video-background {
-  width: 100vh;
   position: relative; }
 
 video {
@@ -51,7 +50,7 @@ video {
   top: 0;
   left: 0;
   width: 100%;
-  height: 190vh;
+  height: 130vh;
   object-fit: cover; }
 
 .capa {
@@ -59,7 +58,7 @@ video {
   top: 0;
   left: 0;
   width: 100%;
-  height: 190vh;
+  height: 130vh;
   background-color: black;
   opacity: 0.3;
   mix-blend-mode: overlay; }
@@ -137,8 +136,8 @@ video {
 /* SOUNDTRACKS */
 .pages__body {
   background-image: url("../css/img/bacground3.jpg");
-  background-repeat: repeat;
-  background-size: contain; }
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .soundtracks__container {
   display: flex;
@@ -185,8 +184,8 @@ video {
 /* FILMS */
 .pages__body {
   background-image: url("../css/img/bacground3.jpg");
-  background-repeat: repeat;
-  background-size: contain; }
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .aumentar a h1 {
   background-color: rgba(255, 255, 255, 0.466);
@@ -226,10 +225,10 @@ video {
 /* FIN FILMS */
 /* FOOTER */
 .footer__fixed {
-  margin-top: 780px; }
+  margin-top: 0px; }
 
 footer {
-  position: relative;
+  position: fixed;
   z-index: 2;
   bottom: 0;
   left: 0;
@@ -290,8 +289,8 @@ footer {
 /* MEDIA */
 .pages__body {
   background-image: url("../css/img/bacground3.jpg");
-  background-repeat: repeat;
-  background-size: contain; }
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .media__center {
   display: flex;
@@ -323,7 +322,9 @@ footer {
   border-radius: 5px;
   padding: 30px;
   margin-top: 40px;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  margin-left: 200px;
+  margin-right: 200px; }
   .card__contact .form-floating {
     margin: 10px;
     color: gray; }
@@ -348,8 +349,8 @@ footer {
 /* FOUNDERS */
 .pages__body {
   background-image: url("../css/img/bacground3.jpg");
-  background-repeat: repeat;
-  background-size: contain; }
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .ghibli__info {
   display: flex;
@@ -367,7 +368,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap; 
+  margin-bottom: 200px;}
   .founders__container .card, .founders__container .card__media, .founders__container .films__container .card__films, .films__container .founders__container .card__films {
     margin: 3rem;
     font-family: 'Cormorant', serif;
@@ -477,7 +479,7 @@ footer {
   /* FIN FILMS */
   /* FOOTER */
   .footer__fixed {
-    margin-top: 830px;
+    margin-top: 0px;
     margin-bottom: 0; }
   footer {
     position: none;
@@ -522,6 +524,9 @@ footer {
 /* MIXIN */
 /* MIXIN */
 /* FIN IMPORT */
+main {
+  margin-bottom: 200px; }
+
 .contact__body {
   background-image: url("../css/img/background2.jpg");
   background-repeat: repeat;
