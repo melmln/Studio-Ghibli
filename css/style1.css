@@ -231,7 +231,7 @@ video {
   margin-top: 0px; }
 
 footer {
-  position: relative;
+  position: fixed;
   z-index: 2;
   bottom: 0;
   left: 0;
@@ -372,7 +372,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 150px; }
   .founders__container .card, .founders__container .card__media, .founders__container .films__container .card__films, .films__container .founders__container .card__films {
     margin: 3rem;
     font-family: 'Cormorant', serif;
@@ -515,7 +516,7 @@ footer {
     margin-top: 0px;
     margin-bottom: 0; }
   footer {
-    position: none;
+    position: fixed;
     padding: 30px;
     margin-top: 200px;
     padding-left: 10px;

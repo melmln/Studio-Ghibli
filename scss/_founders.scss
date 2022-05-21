@@ -28,6 +28,7 @@
 .founders__container {
     @include center ();
     flex-wrap: wrap;
+    margin-bottom: 150px;
 
     .card {
         margin: 3rem;
