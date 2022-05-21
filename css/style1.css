@@ -226,7 +226,7 @@ video {
 /* FIN FILMS */
 /* FOOTER */
 .footer__fixed {
-  margin-top: 150px; }
+  margin-top: 200px; }
 
 footer {
   position: relative;
@@ -293,7 +293,13 @@ footer {
   background-repeat: repeat;
   background-size: contain; }
 
+.media__center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .card__media {
+  width: 70%;
   margin-right: 80px;
   margin-left: 80px;
   margin-bottom: 50px;
@@ -380,11 +386,6 @@ footer {
     background-repeat: repeat;
     background-size: contain; }
   /* HEADER */
-  /*  .container-fluid {
-        background-image: url("../css/img/bacground1.jpg");
-        background-repeat: no-repeat;
-        background-size: cover; 
-    } */
   .menu__container {
     display: flex; }
     .menu__container img {
@@ -476,7 +477,7 @@ footer {
   /* FIN FILMS */
   /* FOOTER */
   .footer__fixed {
-    margin-top: 500px;
+    margin-top: 600px;
     margin-bottom: 0; }
   footer {
     position: none;
