@@ -222,13 +222,16 @@ video {
       .films__container .trailers .btn:hover {
         transform: scale(1.05); }
 
+.films__topButton {
+  display: none; }
+
 /* FIN FILMS */
 /* FOOTER */
 .footer__fixed {
   margin-top: 0px; }
 
 footer {
-  position: fixed;
+  position: relative;
   z-index: 2;
   bottom: 0;
   left: 0;
@@ -311,6 +314,9 @@ footer {
       justify-content: center;
       width: 100%; }
 
+.media__topButton {
+  display: none; }
+
 /* FIN MEDIA */
 /* CONTACT US */
 .card__contact {
@@ -322,9 +328,7 @@ footer {
   border-radius: 5px;
   padding: 30px;
   margin-top: 40px;
-  margin-bottom: 100px;
-  margin-left: 200px;
-  margin-right: 200px; }
+  margin-bottom: 100px; }
   .card__contact .form-floating {
     margin: 10px;
     color: gray; }
@@ -368,8 +372,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; 
-  margin-bottom: 200px;}
+  flex-wrap: wrap; }
   .founders__container .card, .founders__container .card__media, .founders__container .films__container .card__films, .films__container .founders__container .card__films {
     margin: 3rem;
     font-family: 'Cormorant', serif;
@@ -440,6 +443,21 @@ footer {
     .card__media .img__media {
       padding: 5px;
       width: 100%; }
+  .media__topButton {
+    justify-content: center;
+    align-items: center;
+    background-color: #80b1ce;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    font-size: 30px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); }
+    .media__topButton .fa-solid {
+      color: white; }
   /* FIN MEDIA */
   /* CONTACT US */
   .card__contact {
@@ -476,6 +494,21 @@ footer {
       padding: 20px; }
       .films__ul .card__films .título__films {
         font-size: 25px; }
+  .films__topButton {
+    justify-content: center;
+    align-items: center;
+    background-color: #80b1ce;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    font-size: 30px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); }
+    .films__topButton .fa-solid {
+      color: white; }
   /* FIN FILMS */
   /* FOOTER */
   .footer__fixed {

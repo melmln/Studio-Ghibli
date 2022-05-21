@@ -95,6 +95,25 @@
             }  
     }
 
+    .media__topButton {
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(128, 177, 206);
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        font-size: 30px;
+        border-radius: 50%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+
+        .fa-solid {
+            color: white;
+        }
+      }
+      
     /* FIN MEDIA */
 
     /* CONTACT US */
@@ -156,6 +175,25 @@
             }
         }
     }
+
+    .films__topButton {
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(128, 177, 206);
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        font-size: 30px;
+        border-radius: 50%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+
+        .fa-solid {
+            color: white;
+        }
+      }
 
     /* FIN FILMS */ 
 
